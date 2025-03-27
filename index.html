@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Branding</title>
+    <!-- Membuat logo untuk title web -->
+    <link rel="websiteicon" type="websiteicon" href="https://th.bing.com/th/id/OIP.KJXo0q-xapmdKYiq9xV2WgHaHa?rs=1&pid=ImgDetMain">
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome -->
@@ -19,50 +21,58 @@
             <div class="flex items-center">
             <span class="text-white font-bold text-xl">Personal Branding</span>
         </div>
-            <div class="flex items-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
-                <a class="mr-1 text-white py-2 px-4 rounded hover:bg-green-700 inline-block hover:border-b" href="#identitas">Identitas</a>
-                <a class="mr-1 text-white py-2 px-4 rounded hover:bg-green-700 inline-block hover:border-b" href="#pendidikan">Pendidikan</a>
-                <a class="mr-1 text-white py-2 px-4 rounded hover:bg-green-700 inline-block hover:border-b" href="#proyek">Proyek</a>
-                <a class="text-white py-2 px-4 rounded hover:bg-green-700 inline-block hover:border-b" href="#skill">Skill</a>
+            <div class="flex items-center justify-center grid-cols-1 md:grid-cols-4">
+                <a class="mr-1 text-white py-2 px-4 rounded hover:bg-green-700 inline-block hover:border-b" href="#aboutme">About Me</a>
+                <a class="mr-1 text-white py-2 px-4 rounded hover:bg-green-700 inline-block hover:border-b" href="project.html">Proyek</a>
+                <a class="text-white py-2 px-4 rounded hover:bg-green-700 inline-block hover:border-b" href="resume.html">Resume</a>
         </div>
         </div>
     </nav>
 
-    <!-- Identitas -->
-    <div id="identitas" class="border rounded-lg p-5 shadow-lg bg-white mt-8 mx-5">
-        <h2 class="text-2xl font-bold mb-4 border-b">IDENTITAS DIRI</h2>
-        <table>
-            <tr>
-                <td class="font-bold">Nama</td>
-                <td>:</td>
-                <td>Yudhistira</td>
-            </tr>
-            <tr>
-                <td class="font-bold">Alamat</td>
-                <td>:</td>
-                <td>Jl. Ahmad Yani, Tlk. Kering, Kec. Batam Kota</td>
-            </tr>
-            <tr>
-                <td class="font-bold">Tempat & Tanggal Lahir</td>
-                <td>:</td>
-                <td>Dumai, 01 Desember 2006</td>
-            </tr>
-            <tr>
-                <td class="font-bold">Agama</td>
-                <td>:</td>
-                <td>Buddha</td>
-            </tr>
-            <tr>
-                <td class="font-bold">Kewarganegaraan</td>
-                <td>:</td>
-                <td>Warga Negara Indonesia (WNI)</td>
-            </tr>
-        </table>
-        
-        <p class="italic mt-2">"Saya adalah seorang mahasiswa Politeknik Negeri Batam yang memiliki ketertarikan dan minat dalam pengembangan sistem dan aplikasi."</p>
-    </div>
+    <section>
+        <div class="flex flex-col lg:flex-row">
+            <!-- Bagian Kiri -->
+            <div class="bg-yellow-600 text-white flex justify-center items-center p-8 flex-1">
+                <div class="text-center">
+                    <h2 class="text-6xl font-bold">Welcome To My Website!</h2>
+                    <p class="text-3xl mt-5">Hello!, I'm Yudhistira Software Development</p>
+                </div>
+            </div>
+    
+            <!-- Bagian Kanan -->
+            <div class="flex justify-center items-center flex-1">
+                <img class="w-full h-full object-contain lg:object-cover" src="/img/IMG-20241214-WA0367.jpg" alt="foto">
+            </div>
+        </div>
+    </section>
+    
 
-    <!-- Pendidikan -->
+    <section id="aboutme">
+        <div class="bg-white py-8 flex flex-col items-center justify-center">
+            <div class="text-center  ml-5 mr-5">
+                <h1 class="font-bold text-3xl">About Me</h1>
+                <p class="text-xl mt-4">I'm Yudhistira, an active university student majoring in Software Engineering Technology at Politeknik Negeri Batam. I have hands-on experience in computer hardware troubleshooting, software installation, and basic networking from internship and part-time work at Millenium Computer & Gadged.</p>
+                <div class="flex items-center justify-center mt-5 text-5xl">
+                    <a href="https://github.com/youdid-max" target="_blank" class="text-black flex items-center mx-2">
+                        <span><i class="fa-brands fa-github"></i></span>
+                    </a>
+                    <a href="https://www.instagram.com/youthis._/" target="_blank" class="text-black flex items-center mx-2">
+                        <span><i class="fa-brands fa-instagram"></i></span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/yudhistira-%E9%BB%84%E5%98%89%E8%BE%89-a4b38029b/" target="_blank" class="text-black flex items-center mx-2">
+                        <span><i class="fa-brands fa-linkedin"></i></span>
+                    </a>
+                    <a href="mailto:yudhstira.98@email.com" target="_blank" class="text-black flex items-center mx-2">
+                        <span><i class="fa-regular fa-envelope"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <!-- Pendidikan
     <div id="pendidikan" class="border rounded-lg p-5 shadow-lg bg-white mt-8 mx-5">
         <h2 class="text-2xl font-bold mb-4 border-b">PENDIDIKAN</h2>
         <p><span class="font-bold text-xl">SMKN 1 Dumai</span></p>
@@ -75,51 +85,10 @@
             <li class="ml-5"><span class="font-bold">Jurusan :</span> Teknologi Rekayasa Perangkat Lunak (TRPL)</li>
             <li class="ml-5"><span class="font-bold">Tahun ajaran :</span> 2024-Sekarang</li>
         </ulp>
-    </div>
-
-    <!-- Proyek -->
-    <div id="proyek" class="border rounded-lg p-5 shadow-lg bg-white mt-8 mx-5">
-        <h2 class="text-2xl font-bold mb-4 border-b">PROYEK</h2>
-        <table>
-            <tr>
-                <td><span class="font-bold">Judul Proyek</span></td>
-                <td>:</td>
-                <td>Aplikasi Pencatatan Stok Bahan Baku Berbasis Web</td>
-            </tr>
-            <tr>
-                <td><span class="font-bold">Deskripsi Proyek</span></td>
-                <td>:</td>
-                <td class="italic mt-2 mb-2">"Aplikasi Pencatatan Stok Bahan Baku Berbasis Web adalah sistem yang dirancang untuk mempermudah pengguna mengelola stok bahan baku secara real-time."</td>
-            </tr>
-            <tr>
-                <td><span class="font-bold">Bahasa Pemograman yang digunakan</span></td>
-                <td>:</td>
-                <td >HTML/CSS, JavaScript, PHP Native</td>
-            </tr>
-            <tr>
-                <td><span class="font-bold">Waktu Pengembangan</span></td>
-                <td>:</td>
-                <td >6 Bulan</td>
-            </tr>
-            <tr>
-                <td><span class="font-bold">Role</span></td>
-                <td>:</td>
-                <td>Front-end Developer</td>
-            </tr>
-            <tr>
-                <td><span class="font-bold">Github Repository</span></td>
-                <td>:</td>
-                <td><a href="https://github.com/youdid-max/PBO" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-green-700 inline-block mt-4">Klik saya</a></td>
-            </tr>
-
-        </table>
-                
-            </li>
-        </ul>
-    </div>
+    </div> -->
 
     <!-- Skill -->
-    <div id="skill" class="border rounded-lg p-5 shadow-lg bg-white mt-8 mx-5 mb-8">
+    <!-- <div id="skill" class="border rounded-lg p-5 shadow-lg bg-white mt-8 mx-5 mb-8">
         <h2 class="text-2xl font-bold mb-4 border-b">SKILL</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
             <div>
@@ -160,26 +129,15 @@
                 </div>
             </div>
         </div>        
-    </div>
+    </div> --> 
 
     <!-- Footer -->
     <footer class="bg-blue-600 p-4">
         <div class=" flex items-center justify-center">
-            <!-- GitHub Link -->
-            <a href="https://github.com/youdid-max" target="_blank" class="text-white flex items-center">
-                <span class="ml-2"><i class="fa-brands fa-github"></i>GitHub</span>
-            </a>
-            <a href="https://www.instagram.com/youthis._/" target="_blank" class="text-white flex items-center">
-                <span class="ml-2"><i class="fa-brands fa-instagram"></i> Intagram</span>
-            </a>
-            <a href="https://www.linkedin.com/in/yudhistira-%E9%BB%84%E5%98%89%E8%BE%89-a4b38029b/" target="_blank" class="text-white flex items-center">
-                <span class="ml-2"><i class="fa-brands fa-linkedin"></i> LinkedIn</span>
-            </a>
-            <a href="mailto:yudhstira.98@email.com" target="_blank" class="text-white flex items-center">
-                <span class="ml-2"><i class="fa-regular fa-envelope"></i> Email</span>
-            </a>
-        </div>
-    </footer>
+            <div class="container mx-auto text-center font-bold">
+                <p>&copy; Yudhistira. All rights reserved.</p>
+            </div>
+    </footer> 
     
 
 </body>
